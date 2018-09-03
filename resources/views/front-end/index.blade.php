@@ -171,14 +171,14 @@
           <div class="col-lg-6 p-0 text-center" style="">
             <p class="title">Nauda</p>
             <div class="cont" style="">
-              <p class="cstm-m-l" style="margin-left: 0px"><span class="skin-clr">#</span>&nbsp;&nbsp;Paspartina medžiagų apykaitą</p>
-              <p style="font-size: 14px;">Pasišalinus toksinams iš mūsų organizmo pagerėja ir palengvėjaorganizmo darbas, suvalgytas maistas veiksmingiau ir sparčiau virškinamas.</p>
-              <p class="cstm-m-l" style="margin-left: 0px"><span class="skin-clr">#</span>&nbsp;&nbsp;Stiprinaimuninę sistemą</p>
-              <p style="font-size: 14px;">Supermaistu“ laikomos Goji uogos (liet. godži, dar vadinamosdygliuotojo ir kininio ožerškio uogomis) padidins Jūsų organizmoatsparumą  bei pagerins savijautą - netik pukiai atrodysite, bet taip pat ir jausitės.</p>
-              <p class="cstm-m-l" style="margin-left: 0px"><span class="skin-clr">#</span>&nbsp;&nbsp;ValoJūsų kūną</p>
-              <p style="font-size: 14px;">Natūralūs ingredientai, tarp jų - Senna lapai, padės išvalytiJūsų organizmą ir sumažinti pilvo išsipūtimą bei pūtimo jausmą.</p>
-              <p class="cstm-m-l" style="margin-left: 0px"><span class="skin-clr">#</span>&nbsp;&nbsp;Suteikiadaugiau energijos</p>
-              <p style="font-size: 14px;">Matės žolės (isp. Yerbe Mate) lapų bei gudobelės (angl.Hawthorn) uogų mišinys ir kitos gamtos gėrybės yra būtinos viso kūnosveikatai</p>
+              <p id="first" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;Paspartina medžiagų apykaitą</p>
+              <p class="first" style="font-size: 17px; display: none">Pasišalinus toksinams iš mūsų organizmo pagerėja ir palengvėjaorganizmo darbas, suvalgytas maistas veiksmingiau ir sparčiau virškinamas.</p>
+              <p id="second" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;Stiprinaimuninę sistemą</p>
+              <p class="second" style="font-size: 17px;display: none">Supermaistu“ laikomos Goji uogos (liet. godži, dar vadinamosdygliuotojo ir kininio ožerškio uogomis) padidins Jūsų organizmoatsparumą  bei pagerins savijautą - netik pukiai atrodysite, bet taip pat ir jausitės.</p>
+              <p id="third" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;ValoJūsų kūną</p>
+              <p class="third" style="font-size: 17px;display: none">Natūralūs ingredientai, tarp jų - Senna lapai, padės išvalytiJūsų organizmą ir sumažinti pilvo išsipūtimą bei pūtimo jausmą.</p>
+              <p id="four" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;Suteikiadaugiau energijos</p>
+              <p class="four" style="font-size: 17px;display: none">Matės žolės (isp. Yerbe Mate) lapų bei gudobelės (angl.Hawthorn) uogų mišinys ir kitos gamtos gėrybės yra būtinos viso kūnosveikatai</p>
             </div>
           </div>
         </div>
@@ -189,16 +189,11 @@
       <div class="cstm-sec4-sub2">
         <div class="col-lg-12 p-0 cstm-center">
           <div class="col-lg-6 p-0 text-center">
-            <p class="title black-clr">Sveika mityba</p>
+            <p class="title black-clr">Sveika Mityba</p>
             <hr>
             <div class="cont">
               <p class="skin-clr">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Visi žinome, kokia svarbi yra aktyvi gyvensena ir tinkamamityba, bet to ne visada užtenka norint be vargo pasiekti trokštamų rezultatų neprarandant motyvacijos. Ypač, kai įdėtos pastangos neskuba atsispindėti netik išvaizdoje, bet ir savijautoje, o juk puikiai jaustis norime jau dabar!Leptin siekė atrasti paprastą <a href="#" data-toggle="modal" data-target="#myModal1" style="font-size: 14px;">See More</a> 
               </p>
             </div>
           </div>
@@ -209,6 +204,30 @@
         <div class="clearfix"></div>
       </div>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
+    font-style: italic;">Sveika Mityba</h4>
+      </div>
+      <div class="modal-body" style="color: #d8b763;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;">
+        Visi žinome, kokia svarbi yra aktyvi gyvensena ir tinkamamityba, bet to ne visada užtenka norint be vargo pasiekti trokštamų rezultatų neprarandant motyvacijos. Ypač, kai įdėtos pastangos neskuba atsispindėti netik išvaizdoje, bet ir savijautoje, o juk puikiai jaustis norime jau dabar!Leptin siekė atrasti paprastą, natūralų, sveikatai nepavojingą irveiksmingą būdą išvalyti organizmą be alinančių pastangų. Taip atsiradovisiškai natūrali arbata, sukurta po rūpestingų tyrinėjimų, padedanti iš organizmopašalinti toksinus bei valanti ne tik Jūsų kūną, bet ir mintis. Pagamintanaudojant tik aukščiausios kokybės sudedamąsias dalis, Leptin arbatanatūraliai palengvins dažnų nusiskundimų simptomus, palengvins organizmodarbą, ir, vartojama kartu laikantis subalansuotos lieknėjimo programos,padės Jums pasiekti pastebimų
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
     <div class="cstm-sec4">
       <div class="cstm-sec4-sub3">
         <div class="col-lg-12 p-0 cstm-center">
@@ -220,12 +239,7 @@
             <hr>
             <div class="cont">
               <p class="skin-clr">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               Visi žinome apie sporto ir tinkamos mitybos svarbą, bet taippat suprantame, jog to ne visada užtenka norint greičiau ir be vargo pasiektitrokštamų rezultatų. Leptin komanda siekė rasti paprastą, lengvą ir,svarbiausia, veiksmingą būdą išvalyti organizmą be alinančių pastangų; Leptin kūrėjų tikslas yra prisidėti, jog ši patirtis ir puikūs rezultatai būtų prieinami kiekvienam <a href="#" data-toggle="modal" data-target="#myModal" style="font-size: 14px;">See More</a> 
               </p>
             </div>
           </div>
@@ -234,6 +248,37 @@
       </div>
     </div>
   </div>
+
+      <!-- modal 1 -->
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
+    font-style: italic;">Apie Mus</h4>
+      </div>
+      <div class="modal-body" style="color: #d8b763;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;">
+        Visi žinome apie sporto ir tinkamos mitybos svarbą, bet taippat suprantame, jog to ne visada užtenka norint greičiau ir be vargo pasiektitrokštamų rezultatų. Leptin komanda siekė rasti paprastą, lengvą ir,svarbiausia, veiksmingą būdą išvalyti organizmą be alinančių pastangų; Leptin kūrėjų tikslas yra prisidėti, jog ši patirtis ir puikūs rezultatai būtų prieinami kiekvienam. <br><br>
+           
+        Leptin komanda nenuilstamai ieškojo natūralių gamtosgėrybių ir jų mišinių, kurie turėtų didžiausią teigiamą poveikį Jūsų kūnui.Tad Leptin misija buvo aiški: rasti ingredientus galinčius mums padėtine tik jaustis, bet ir atrodyti puikiai. Leptin atsirinko tik pačiasgeriausias ir aukščiausios kokybės natūralias žaliavas (jų tarpe - laimo beikiaulpienių lapai, godži uogos bei kitos gamtos gėrybės), kurios buvopramintos „super ingredientais“. Būtent šių „super ingredientų“ pagrindu irbuvo sukurta Leptin produktų linija, turinti iš esmės pakeisti tai,kaip Jūs atrodote bei jaučiatės. <br><br>
+                   
+        Taip gimė Leptin arbata - visiškai natūrali arbata,sukurta po rūpestingų tyrinėjimų, padedanti atsikratyti toksinų, išvalyti beiišgryninti ne tik Jūsų kūną, bet ir mintis. Pagaminta naudojant tikaukščiausios kokybės sudedamąsias dalis, Leptin  arbata natūraliai palengvins dažnų nusiskundimų simptomus, ir, vartojama kartu laikantis subalansuotoslieknėjimo programos.
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <!-- endmodal1 -->
 
   <div class="container">
     <div class="m-t-5p">
@@ -354,4 +399,35 @@
   </div>
   <!-- COPY SECTION -->
 
+  @endsection
+
+@section('script')
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#first').click(function(){
+        $('.second').css('display','none');
+        $('.third').css('display','none');
+        $('.four').css('display','none');
+        $('.first').fadeIn(800);
+      });
+      $('#second').click(function(){
+        $('.first').css('display','none');
+        $('.third').css('display','none');
+        $('.four').css('display','none');
+        $('.second').fadeIn(800);
+      });
+      $('#third').click(function(){
+        $('.first').css('display','none');
+        $('.second').css('display','none');
+        $('.four').css('display','none');
+        $('.third').fadeIn(800);
+      });
+      $('#four').click(function(){
+        $('.first').css('display','none');
+        $('.second').css('display','none');
+        $('.third').css('display','none');
+        $('.four').fadeIn(800);
+      });
+    });
+  </script>
   @endsection
