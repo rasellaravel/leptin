@@ -29,7 +29,8 @@ class IndexController extends Controller
  
     }
     public function addToCart(Request $request)
-    {
+    {   
+        $price = 0;
         $flag = 0;
         foreach(Cart::content() as $row){ 
            if($row->id==$request->id){
@@ -42,6 +43,7 @@ class IndexController extends Controller
              $single_Product = Product::find($request->id);
              if($single_Product->discount){
                 $price1 = $single_Product->product_price*$single_Product->discount/100;
+                
                 $price = $single_Product->product_price-$price1;
              }else{
                  $price = $single_Product->product_price;

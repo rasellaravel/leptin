@@ -8,7 +8,7 @@
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
-|
+| 
 */
 
 Route::get('/cancel', function () {
@@ -33,6 +33,8 @@ Route::get('user-change-password','HomeController@userChangePassword');
 
 Route::post('profile-update','HomeController@profileUpdate');
 Route::post('user_change_password_update','HomeController@userPasswordChange');
+
+Route::post('billing-update','HomeController@BillingUpdate');
 
 
 

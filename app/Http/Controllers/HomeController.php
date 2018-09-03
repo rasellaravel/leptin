@@ -42,7 +42,8 @@ class HomeController extends Controller
     public function userBillingAddressUpdate()
     {
         $country = country::all();
-        return view('front-end.user-billing-address',compact('country'));
+        $billing = Billing::where('user_id',Auth()->user()->id)->first();
+        return view('front-end.user-billing-address',compact('country','billing'));
     }
     public function userChangePassword()
     {
@@ -92,6 +93,37 @@ class HomeController extends Controller
             return back()->with('not_match');
         }
       
+    }
+    public function BillingUpdate(Request $request)
+    {
+
+        
+        $billing_get = Billing::where('user_id',Auth()->user()->id)->first();
+        if($billing_get){
+             $billing = Billing::find($billing_get->id);
+             $billing->country = $request->country;
+             $billing->district = $request->district;
+             $billing->city = $request->city;
+
+             $billing->street_address1 = $request->s_address1;
+             $billing->street_address2 = $request->s_address2;
+             $billing->zip = $request->zip;
+             $billing->save();
+        }else{
+            $billing = new Billing;
+            $billing->user_id = $request->Auth()->user()->id;
+            $billing->country = $request->country;
+             $billing->district = $request->district;
+             $billing->city = $request->city;
+
+             $billing->street_address1 = $request->s_address1;
+             $billing->street_address2 = $request->s_address2;
+             $billing->zip = $request->zip;
+             $billing->save();
+        }
+       
+        return back()->with('success');
+
     }
     
  

@@ -65,8 +65,8 @@ class PayController extends Controller
 			$data['return_url'] = url('/payment/success');
 			$data['cancel_url'] = url('/payment/cancel');
 			$response = $provider->setExpressCheckout($data);
-            dd($response);
-			//return Redirect::to($response['paypal_link']);
+            
+			return Redirect::to($response['paypal_link']);
     	}else{
     		try {
             $self_url = $this->get_self_url();
