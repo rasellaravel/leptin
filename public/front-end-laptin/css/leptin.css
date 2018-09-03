@@ -453,3 +453,9 @@ sub, sup {
   background: #bdb1b114;
   min-height: 460px;
 }
+
+.preview-pic label {
+  position: absolute;
+  right: 13%;
+  top: 65px;
+}

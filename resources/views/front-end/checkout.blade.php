@@ -55,7 +55,7 @@
 					    <label for="exampleInputEmail1">{{__('leptin_lan.country')}}<spam style="color: red;padding:3px;">*</span></label>
 					    <select class="form-control" name="country" required>
 
-					    @foreach($country as $country)
+					    @foreach($countrys as $country)
 						  <option value="{{$country->name}}">{{$country->name}}</option>
 						 @endforeach
 						</select>
