@@ -42,8 +42,7 @@ class HomeController extends Controller
     public function userBillingAddressUpdate()
     {
         $country = country::all();
-        $billing = Billing::where('user_id',Auth()->user()->id)->first();
-        return view('front-end.user-billing-address',compact('country','billing'));
+        return view('front-end.user-billing-address',compact('country'));
     }
     public function userChangePassword()
     {
@@ -94,36 +93,9 @@ class HomeController extends Controller
         }
       
     }
-    public function BillingUpdate(Request $request)
+    public function paymenyHistry()
     {
-
-        
-        $billing_get = Billing::where('user_id',Auth()->user()->id)->first();
-        if($billing_get){
-             $billing = Billing::find($billing_get->id);
-             $billing->country = $request->country;
-             $billing->district = $request->district;
-             $billing->city = $request->city;
-
-             $billing->street_address1 = $request->s_address1;
-             $billing->street_address2 = $request->s_address2;
-             $billing->zip = $request->zip;
-             $billing->save();
-        }else{
-            $billing = new Billing;
-            $billing->user_id = $request->Auth()->user()->id;
-            $billing->country = $request->country;
-             $billing->district = $request->district;
-             $billing->city = $request->city;
-
-             $billing->street_address1 = $request->s_address1;
-             $billing->street_address2 = $request->s_address2;
-             $billing->zip = $request->zip;
-             $billing->save();
-        }
-       
-        return back()->with('success');
-
+        return view('front-end.payment-histry');
     }
     
  

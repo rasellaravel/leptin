@@ -22,6 +22,7 @@
     <script type="text/javascript" src="{{asset('public/front-end-laptin/js/bootstrap.min.js')}}"></script>
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    @yield('style')
 
   </head>
 <body>

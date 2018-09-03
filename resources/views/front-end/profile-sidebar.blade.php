@@ -44,7 +44,7 @@
                             Change Password </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{url('payment-histry')}}">
                             <i class="glyphicon glyphicon-flag"></i>
                             Payment Histry </a>
                         </li>

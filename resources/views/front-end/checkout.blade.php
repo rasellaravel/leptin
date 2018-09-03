@@ -26,6 +26,11 @@
 		 @endif
 	    
 	   <!--  {{__('leptin_lan.fill_form')}} -->
+	   @if(session('msg'))
+
+	   {{session('msg')}}
+
+	   @endif
 
 	  </div>
 
@@ -63,9 +68,18 @@
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.country')}}<spam style="color: red;padding:3px;">*</span></label>
 					    <select class="form-control" name="country" required>
+					    @foreach($countrys as $country)
+						  <option value="{{$country->name}}"
 
-					    @foreach($country as $country)
-						  <option value="{{$country->name}}"<?php if(Auth::check()){if($country->name==$info->country){echo 'selected';}}?> >{{$country->name}}</option>
+
+						  <?php if(Auth::check()){
+						  	if($country->name == $info->country){
+						  		echo 'selected';
+						  	}
+						  	}?>
+
+						  >{{$country->name}}</option>
+
 						 @endforeach
 						</select>
 					  </div>

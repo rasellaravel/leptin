@@ -14,6 +14,7 @@
 Route::get('/cancel', function () {
     return view('front-end.paymentCancel');
 });
+
 Route::get('/', 'IndexController@index')->name('index');
 Route::get('product-details/{id}', 'IndexController@productDetails');
 
@@ -35,6 +36,10 @@ Route::post('profile-update','HomeController@profileUpdate');
 Route::post('user_change_password_update','HomeController@userPasswordChange');
 
 Route::post('billing-update','HomeController@BillingUpdate');
+
+Route::get('payment-histry','HomeController@paymenyHistry');
+
+
 
 
 
