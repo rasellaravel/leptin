@@ -37,7 +37,7 @@
 
 	  @if(Auth::check())
 	  <?php
-	  	$info = DB::table('billings')->where('user_id',Auth::user()->id)->first(); 
+	  	$info = DB::table('billings')->where('user_id',Auth::user()->id)->orderBy('id','DESC')->first(); 
 	  	$user = DB::table('users')->where('id',Auth::user()->id)->first(); 
 	  ?>
 	  @endif
@@ -54,13 +54,13 @@
 				    <div class="col-md-6">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.f_name')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.f_name')}}" name="f_name" value="<?php if(Auth::check()){echo $user->name;}?>" <?php if(Auth::check()){echo 'readonly';}?> required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.f_name')}}" name="f_name" value="<?php if(Auth::check()){echo $user->name;}?>" required>
 					  </div>
 					</div>
 					<div class="col-md-6">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.l_name')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" name="l_name" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.l_name')}}" value="<?php if(Auth::check()){echo $info->l_name;}?>" <?php if(Auth::check()){echo 'readonly';}?> required>
+					    <input type="text" name="l_name" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.l_name')}}" value="<?php if(Auth::check()){echo $user->last_name;}?>" required>
 					  </div>
 					</div>
 					<input type="hidden" name="total_amount" value="{{Cart::total()}}">
@@ -72,7 +72,7 @@
 						  <option value="{{$country->name}}"
 
 
-						  <?php if(Auth::check()){
+						  <?php if(Auth::check() && $info){
 						  	if($country->name == $info->country){
 						  		echo 'selected';
 						  	}
@@ -87,42 +87,42 @@
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.Street_address')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Street_address')}}" name="s_address1" value="<?php if(Auth::check()){echo $info->street_address1;}?>"  required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Street_address')}}" name="s_address1" value="<?php if(Auth::check() && $info){echo $info->street_address1;}?>"  required>
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.appartment')}}" name="s_address2" value="<?php if(Auth::check()){echo $info->street_address2;}?>">
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.appartment')}}" name="s_address2" value="<?php if(Auth::check() && $info){echo $info->street_address2;}?>">
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.town')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.town')}}" name="city" value="<?php if(Auth::check()){echo $info->city;}?>" required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.town')}}" name="city" value="<?php if(Auth::check() && $info){echo $info->city;}?>" required>
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.District')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.District')}}" name="district" value="<?php if(Auth::check()){echo $info->district;}?>" required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.District')}}" name="district" value="<?php if(Auth::check() && $info){echo $info->district;}?>" required>
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.postcode')}}</label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.postcode')}}" name="zip" value="<?php if(Auth::check()){echo $info->zip;}?>">
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.postcode')}}" name="zip" value="<?php if(Auth::check() && $info){echo $info->zip;}?>">
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.Phone')}} <spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Phone')}}" name="phone" value="<?php if(Auth::check()){echo $info->phone;}?>" required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Phone')}}" name="phone" value="<?php if(Auth::check() && $info){echo $info->phone;}?>" required>
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.email')}} <spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.email')}}" name="email" value="<?php if(Auth::check()){echo $info->email;}?>" <?php if(Auth::check()){echo 'readonly';}?> required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.email')}}" name="email" value="<?php if(Auth::check()){echo $user->email;}?>" <?php if(Auth::check()){echo 'readonly';}?> required>
 					  </div>
 					</div>
 					<div class="col-md-12">

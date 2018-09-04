@@ -18,20 +18,35 @@
 					  	<th>Product Name</th>
 					  	<th>Price</th>
 					  	<th>Quentity</th>
-					  	<th>Subtatal</th>
+					  	<th>Date</th>
+					  	<th>Total</th>
 
 					  </thead>
+					  <?php
+					  	$histry = DB::table('orders')->where('user_id',Auth::user()->id)->orderBy('id','DESC')->get(); 
+
+					  ?>
 					  <tbody>
-					  <tr>
-					  	<td colspan="4" class="text-center">dfsdf</td>
-					  </tr>
-					  <tr>
-					  	<td></td>
-					  	<td></td>
-					  	<td></td>
-					  	<td></td>
-					  	<td></td>
-					  </tr>
+					  <?php
+					  	if($histry){
+					  		foreach($histry as $histry){
+
+
+					  ?>
+					 	<tr>
+					 		<td>{{$histry->order_id}}</td>
+					 		<td>{{$histry->product_name}}</td>
+					 		<td>{{$histry->price}} EU</td>
+					 		<td>{{$histry->qty}}</td>
+					 		<td>
+					 			<?php 
+					 				$orig = strtotime($histry->created_at);
+					 				echo date('D-M-Y: h:i a',$orig);
+					 			?>
+					 		</td>
+					 		<td>{{$histry->total}} EU</td>
+					 	</tr>
+					  	<?php 	} }?>
 					  	
 					  </tbody>
 					</table>

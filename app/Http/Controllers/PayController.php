@@ -219,19 +219,9 @@ if(!Auth::check()){
 
 
 
-if(Auth::check()){
-    $billing_id = Billing::where('user_id',Auth()->user()->id)->first();
-    if($billing_id){
-        $billing = Billing::find($billing_id->id);
-    }else{
-        $billing = new Billing;
-    }
-    
 
-}else{
-    $billing = new Billing;
-    $billing->user_id = $user->id;
-}
+$billing = new Billing;
+$billing->user_id = $userId;
 
 $billing->f_name = $userInfo['f_name'];
 $billing->l_name = $userInfo['l_name'];
@@ -274,7 +264,8 @@ return view('front-end.paymentSuccess');
 
 public function payseraaccept()
 {
-    if(!Auth::check()){
+$userInfo = Session::get('billing');
+if(!Auth::check()){
     $password = Hash::make(str_random(8));
     $user = new User;
     $user->name = $userInfo['f_name'];
@@ -289,19 +280,9 @@ public function payseraaccept()
 
 
 
-if(Auth::check()){
-    $billing_id = Billing::where('user_id',Auth()->user()->id)->first();
-    if($billing_id){
-        $billing = Billing::find($billing_id->id);
-    }else{
-        $billing = new Billing;
-    }
-    
 
-}else{
-    $billing = new Billing;
-    $billing->user_id = $user->id;
-}
+$billing = new Billing;
+$billing->user_id = $user->id;
 
 $billing->f_name = $userInfo['f_name'];
 $billing->l_name = $userInfo['l_name'];
