@@ -37,7 +37,7 @@
 
 	  @if(Auth::check())
 	  <?php
-	  	$info = DB::table('billing_updates')->where('user_id',Auth::user()->id)->first(); 
+	  	$info = DB::table('billings')->where('user_id',Auth::user()->id)->orderBy('id','DESC')->first(); 
 	  	$user = DB::table('users')->where('id',Auth::user()->id)->first(); 
 	  ?>
 	  @endif
@@ -87,12 +87,12 @@
 					<div class="col-md-12">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.Street_address')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Street_address')}}" name="s_address1" value="<?php if(Auth::check() && $info){echo $info->s_address1;}?>"  required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Street_address')}}" name="s_address1" value="<?php if(Auth::check() && $info){echo $info->street_address1;}?>"  required>
 					  </div>
 					</div>
 					<div class="col-md-12">
 					  <div class="form-group">
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.appartment')}}" name="s_address2" value="<?php if(Auth::check() && $info){echo $info->s_address2;}?>">
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.appartment')}}" name="s_address2" value="<?php if(Auth::check() && $info){echo $info->street_address2;}?>">
 					  </div>
 					</div>
 					<div class="col-md-12">

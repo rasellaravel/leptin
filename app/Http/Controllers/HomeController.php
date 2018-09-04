@@ -7,7 +7,6 @@ use App\country;
 use App\User;
 use App\Billing;
 use Hash;
-use App\billingUpdate;
 class HomeController extends Controller
 {
     /**
@@ -37,14 +36,13 @@ class HomeController extends Controller
     public function profile()
     {
         $user = User::find(Auth()->user()->id)->first();
-        $billing = billingUpdate::where('user_id',Auth()->user()->id)->first();
+        $billing = Billing::where('user_id',Auth()->user()->id)->first();
         return view('front-end.user-profile-update',compact('user','billing'));
     }
     public function userBillingAddressUpdate()
     {
-        $billing = billingUpdate::where('user_id',Auth()->user()->id)->first();
         $country = country::all();
-        return view('front-end.user-billing-address',compact('country','billing'));
+        return view('front-end.user-billing-address',compact('country'));
     }
     public function userChangePassword()
     {
@@ -64,13 +62,13 @@ class HomeController extends Controller
         $user->name = $request->f_name;
         $user->last_name = $request->l_name;
         $user->save();
-        $billing_get = billingUpdate::where('user_id',Auth()->user()->id)->first();
+        $billing_get = Billing::where('user_id',Auth()->user()->id)->first();
         if($billing_get){
-             $billing = billingUpdate::find($billing_get->id);
+             $billing = Billing::find($billing_get->id);
              $billing->phone = $request->phone;
              $billing->save();
         }else{
-            $billing = new billingUpdate;
+            $billing = new Billing;
             $billing->phone = $request->phone;
             $billing->user_id = Auth()->user()->id;
             $billing->email = $request->email;
@@ -101,29 +99,7 @@ class HomeController extends Controller
     }
     public function BillingUpdate(Request $request)
     {
-        $billingUpdate = billingUpdate::where('user_id',Auth()->user()->id)->first();
-        if($billingUpdate){
-            $billing = billingUpdate::find($billingUpdate->id);
-            $billing->country = $request->country;
-            $billing->district = $request->district;
-            $billing->city = $request->city;
-            $billing->s_address1 = $request->s_address1;
-            $billing->s_address2 = $request->s_address2;
-            $billing->zip = $request->zip;
-            $billing->save();
-            return back();
-        }else{
-             $billing = new billingUpdate;
-             $billing->user_id = Auth()->user()->id;
-             $billing->country = $request->country;
-            $billing->district = $request->district;
-            $billing->city = $request->city;
-            $billing->s_address1 = $request->s_address1;
-            $billing->s_address2 = $request->s_address2;
-            $billing->zip = $request->zip;
-            $billing->save();
-            return back();
-        }
+        return 'rase';
     }
     
  

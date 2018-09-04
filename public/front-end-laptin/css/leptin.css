@@ -459,10 +459,4 @@ sub, sup {
   right: 13%;
   top: 65px;
 }
-a:active, a:focus {
-  outline: 0;
-  border: none;
-  text-decoration: none;
-  -moz-outline-style: none;
-}
 

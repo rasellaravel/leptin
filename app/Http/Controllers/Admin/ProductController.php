@@ -26,13 +26,25 @@ class ProductController extends Controller
     {
     	$Product = new Product;
 
+        $messages = array(
+                'title.required' => 'Title is required.',
+                'price.required' => 'Price is required.',
+                'price.numeric' => 'Price must be a number.',
+                'thumb.required' => 'Image is required.',
+                'thumb.mimes' => 'Only jpeg, png, gif and svg images are allowed.',
+                'thumb.max' => 'Sorry! Maximum allowed size for an image is 2MB.',
+                'image.*.mimes' => 'Only jpeg, png, gif and svg images are allowed.',
+                'image.*.max' => 'Sorry! Maximum allowed size for an image is 2MB.',
+                'description.required' => 'Description is required.',
+            );
+
         $request->validate([
             'title' => 'required',
             'price' => 'required|numeric',
             'thumb' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'description' => 'required',
-        ]);
+        ], $messages);
 
         $thum_img = $request->file('thumb');
         $thumb = rand().'.'.$thum_img->getClientOriginalExtension();
@@ -154,7 +166,7 @@ public function PackageProductStore(Request $request)
     $PackageProduct->img = $imageName;
     $PackageProduct->link = $request->link;
     $PackageProduct->save();
-    $request -> session() -> flash("success", "true");
+    $request -> session() -> flash("success", "Packege Product Successfully Inserted!!");
     return back();
 
 
