@@ -106,7 +106,7 @@
           <div class="cstm-sec3">
             <p class="number">1.</p>
             <p class="title1">Rytas :</p>
-            <p class="title2">SVOrio kontrolė</p>
+            <p class="title2">Svoriokontrolė</p>
             <div class="col-lg-12 m-t-10p">
             @foreach($PackegeProduct as $PackegeProduct)
               <div class="col-lg-6 text-center">
@@ -117,11 +117,14 @@
               @endforeach
             </div>
             <div class="clearfix"></div>
-            <p class="cont">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+            <p class="cont" style="font-size: 15px; text-align: justify;">
+            Pradėk rytą teisingai - padidink energijos lygį ir suvaldyk apetitą!!!
+            Matės žolės (Paragvajinio Bugienio) lapų sudėtyje yra polifenolių, kurie dalyvauja riebalų 
+            apykaitos procese, gali mažinti apetitą, padėti natūraliomis priemonėmis kovoti su alkiu.
+            Rabarbarų šaknys gali padėti išvalyti Jūsų organizmą, jos prisideda prie natūralaus detoksikacijos proceso, Bei yra vitaminų ir mineralų šaltinis.
+            Kiaulpienės lapai dalyvauja organizmo valymosi procesuose,
+            bei yra laikomi vienu svarbiausių natūralių pagalbininkų lieknėjimo procese.
+
             </p>
           </div>
         </div>
@@ -138,7 +141,7 @@
           <div class="cstm-sec3">
             <p class="number">2.</p>
             <p class="title1">Vakaras :</p>
-            <p class="title2">organizmo valymas</p>
+            <p class="title2">Organizmovalymas</p>
             <div class="col-lg-12 m-t-10p">
              @foreach($PackegeProduct2 as $PackegeProduct)
               <div class="col-lg-6 text-center">
@@ -149,137 +152,30 @@
               @endforeach
             </div>
             <div class="clearfix"></div>
-            <p class="cont">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+            <p class="cont" style="font-size: 15px; text-align: justify;">
+            Išvalyk organizmą po dienos - detoksikacija tavo kūnui. 
+            Gudobelės uogos, jau seniai įrodyta, jog yra itin veiksmingos gydant ankstyvosios stadijos širdies ir 
+            kraujagyslių ligas, gali gerinti kraujotaką ir efektyviai kovoti su aukštu kraujo spaudimu. 
+            Laimo lapų ekstrakte, esančios veikliosios medžiagos gali padėti sumažinti dujų kaupimąsi žarnyne
+            ir pilvo pūtimą; be to juose gausu vitamino C
+            Lotoso lapai, moksliniai tyrimai parodė, jog pastarieji gelbsti, esant nerimui bei stresui, 
+            bei gali užkersti kelią riebalų ir angliavandenių įsisavinimui – 
+            būtent dėl šios priežasties jie naudojami lieknėjimo produktuose. 
+
+
+
+ 
+
+
+
+
+
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="m-t-5p" id="menu3">
-    <div class="cstm-sec4">
-      <div class="cstm-sec4-sub1">
-        <div class="col-lg-12 p-0 cstm-center">
-          <div class="col-lg-6 p-0">
-            <img src="{{asset('public/front-end-laptin/img/img11.jpg')}}" class="img-responsive">
-          </div>
-          <div class="col-lg-6 p-0 text-center" style="">
-            <p class="title">Nauda</p>
-            <div class="cont" style="">
-              <p id="first" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;Paspartina medžiagų apykaitą</p>
-              <p class="first" style="font-size: 17px; display: none">Pasišalinus toksinams iš mūsų organizmo pagerėja ir palengvėjaorganizmo darbas, suvalgytas maistas veiksmingiau ir sparčiau virškinamas.</p>
-              <p id="second" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;Stiprinaimuninę sistemą</p>
-              <p class="second" style="font-size: 17px;display: none">Supermaistu“ laikomos Goji uogos (liet. godži, dar vadinamosdygliuotojo ir kininio ožerškio uogomis) padidins Jūsų organizmoatsparumą  bei pagerins savijautą - netik pukiai atrodysite, bet taip pat ir jausitės.</p>
-              <p id="third" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;ValoJūsų kūną</p>
-              <p class="third" style="font-size: 17px;display: none">Natūralūs ingredientai, tarp jų - Senna lapai, padės išvalytiJūsų organizmą ir sumažinti pilvo išsipūtimą bei pūtimo jausmą.</p>
-              <p id="four" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 21px"><span class="skin-clr" style="font-size: 28px;">+</span>&nbsp;&nbsp;Suteikiadaugiau energijos</p>
-              <p class="four" style="font-size: 17px;display: none">Matės žolės (isp. Yerbe Mate) lapų bei gudobelės (angl.Hawthorn) uogų mišinys ir kitos gamtos gėrybės yra būtinos viso kūnosveikatai</p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    <div class="cstm-sec4">
-      <div class="cstm-sec4-sub2">
-        <div class="col-lg-12 p-0 cstm-center">
-          <div class="col-lg-6 p-0 text-center">
-            <p class="title black-clr">Sveika Mityba</p>
-            <hr>
-            <div class="cont">
-              <p class="skin-clr">
-                Visi žinome, kokia svarbi yra aktyvi gyvensena ir tinkamamityba, bet to ne visada užtenka norint be vargo pasiekti trokštamų rezultatų neprarandant motyvacijos. Ypač, kai įdėtos pastangos neskuba atsispindėti netik išvaizdoje, bet ir savijautoje, o juk puikiai jaustis norime jau dabar!Leptin siekė atrasti paprastą <a href="#" data-toggle="modal" data-target="#myModal1" style="font-size: 14px;">See More</a> 
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6 p-0">
-            <img src="{{asset('public/front-end-laptin/img/img12.jpg')}}" class="img-responsive">
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
-    font-style: italic;">Sveika Mityba</h4>
-      </div>
-      <div class="modal-body" style="color: #d8b763;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;">
-        Visi žinome, kokia svarbi yra aktyvi gyvensena ir tinkamamityba, bet to ne visada užtenka norint be vargo pasiekti trokštamų rezultatų neprarandant motyvacijos. Ypač, kai įdėtos pastangos neskuba atsispindėti netik išvaizdoje, bet ir savijautoje, o juk puikiai jaustis norime jau dabar!Leptin siekė atrasti paprastą, natūralų, sveikatai nepavojingą irveiksmingą būdą išvalyti organizmą be alinančių pastangų. Taip atsiradovisiškai natūrali arbata, sukurta po rūpestingų tyrinėjimų, padedanti iš organizmopašalinti toksinus bei valanti ne tik Jūsų kūną, bet ir mintis. Pagamintanaudojant tik aukščiausios kokybės sudedamąsias dalis, Leptin arbatanatūraliai palengvins dažnų nusiskundimų simptomus, palengvins organizmodarbą, ir, vartojama kartu laikantis subalansuotos lieknėjimo programos,padės Jums pasiekti pastebimų
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-
-    <div class="cstm-sec4">
-      <div class="cstm-sec4-sub3">
-        <div class="col-lg-12 p-0 cstm-center">
-          <div class="col-lg-6 p-0">
-            <img src="{{asset('public/front-end-laptin/img/img13.jpg')}}" class="img-responsive">
-          </div>
-          <div class="col-lg-6 p-0 text-center">
-            <p class="title black-clr">Apie mus</p>
-            <hr>
-            <div class="cont">
-              <p class="skin-clr">
-               Visi žinome apie sporto ir tinkamos mitybos svarbą, bet taippat suprantame, jog to ne visada užtenka norint greičiau ir be vargo pasiektitrokštamų rezultatų. Leptin komanda siekė rasti paprastą, lengvą ir,svarbiausia, veiksmingą būdą išvalyti organizmą be alinančių pastangų; Leptin kūrėjų tikslas yra prisidėti, jog ši patirtis ir puikūs rezultatai būtų prieinami kiekvienam <a href="#" data-toggle="modal" data-target="#myModal" style="font-size: 14px;">See More</a> 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-  </div>
-
-      <!-- modal 1 -->
-    <!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
-    font-style: italic;">Apie Mus</h4>
-      </div>
-      <div class="modal-body" style="color: #d8b763;
-    font-size: 18px;
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;">
-        Visi žinome apie sporto ir tinkamos mitybos svarbą, bet taippat suprantame, jog to ne visada užtenka norint greičiau ir be vargo pasiektitrokštamų rezultatų. Leptin komanda siekė rasti paprastą, lengvą ir,svarbiausia, veiksmingą būdą išvalyti organizmą be alinančių pastangų; Leptin kūrėjų tikslas yra prisidėti, jog ši patirtis ir puikūs rezultatai būtų prieinami kiekvienam. <br><br>
-           
-        Leptin komanda nenuilstamai ieškojo natūralių gamtosgėrybių ir jų mišinių, kurie turėtų didžiausią teigiamą poveikį Jūsų kūnui.Tad Leptin misija buvo aiški: rasti ingredientus galinčius mums padėtine tik jaustis, bet ir atrodyti puikiai. Leptin atsirinko tik pačiasgeriausias ir aukščiausios kokybės natūralias žaliavas (jų tarpe - laimo beikiaulpienių lapai, godži uogos bei kitos gamtos gėrybės), kurios buvopramintos „super ingredientais“. Būtent šių „super ingredientų“ pagrindu irbuvo sukurta Leptin produktų linija, turinti iš esmės pakeisti tai,kaip Jūs atrodote bei jaučiatės. <br><br>
-                   
-        Taip gimė Leptin arbata - visiškai natūrali arbata,sukurta po rūpestingų tyrinėjimų, padedanti atsikratyti toksinų, išvalyti beiišgryninti ne tik Jūsų kūną, bet ir mintis. Pagaminta naudojant tikaukščiausios kokybės sudedamąsias dalis, Leptin  arbata natūraliai palengvins dažnų nusiskundimų simptomus, ir, vartojama kartu laikantis subalansuotoslieknėjimo programos.
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-    <!-- endmodal1 -->
-
   <div class="container">
     <div class="m-t-5p">
       <div class="cstm-brdr1"></div>
@@ -301,41 +197,38 @@
         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
           <div class="owl-carousel">
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Senos <br> lapai</p>
+              <img src="{{asset('public/front-end-laptin/img/dandelion-300x300.jpg')}}">
+              <p>dandelion</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Goji</p>
+              <img src="{{asset('public/front-end-laptin/img/green-tea-300x300.jpg')}}">
+              <p>green tea</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Gudobelės <br> uogos</p>
+              <img src="{{asset('public/front-end-laptin/img/hawthorn-berry-300x300.jpg')}}">
+              <p>hawthorn berry</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Laimo <br> lapai</p>
+              <img src="{{asset('public/front-end-laptin/img/goji-300x300.jpg')}}">
+              <p>goji</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Pienių <br> lapai</p>
+              <img src="{{asset('public/front-end-laptin/img/lime-leaf-300x300.jpg')}}">
+              <p>lime leaf</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Žalia <br> arbata</p>
+              <img src="{{asset('public/front-end-laptin/img/lotus-300x300.jpg')}}">
+              <p>lotus</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Lotoso <br> lapai</p>
+              <img src="{{asset('public/front-end-laptin/img/rhubarb-300x300.jpg')}}">
+              <p>rhubarb</p>
             </div>
             <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Rabarbarų <br> lapai</p>
+              <img src="{{asset('public/front-end-laptin/img/senna-leaf-300x300.jpg')}}">
+              <p>senna leaf</p>
             </div>
-            <div class="item">
-              <img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-              <p>Ramiz</p>
-            </div>
+            
           </div>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
@@ -354,6 +247,137 @@
     <br><br>
     <div class="cstm-brdr1"></div>
   </div>
+
+
+
+  <div class="m-t-5p" id="menu3">
+    <div class="cstm-sec4">
+      <div class="cstm-sec4-sub1">
+        <div class="col-lg-12 p-0 cstm-center">
+          <div class="col-lg-6 p-0">
+            <img src="{{asset('public/front-end-laptin/img/img11.jpg')}}" class="img-responsive">
+          </div>
+          <div class="col-lg-6 p-0 text-center" style="">
+            <p class="title">Nauda</p>
+            <div class="cont" style="">
+              <p id="first" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 18px"><span class="skin-clr" style="font-size: 16px;">+</span>&nbsp;&nbsp;Paspartinamedžiagųapykaitą</p>
+              <p class="first" style="font-size: 13px; display: none">
+              Pasišalinus toksinams iš mūsų organizmo pagerėja ir palengvėja organizmo darbas.</p>
+              <p id="second" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 18px"><span class="skin-clr" style="font-size: 16px;">+</span>&nbsp;&nbsp;Stiprinaimuninęsistemą</p>
+              <p class="second" style="font-size: 13px;display: none">„Supermaistu“ laikomos Goji uogos (liet. godži, dar vadinamos dygliuotojo ir kininio ožerškio uogomis) padidins Jūsų organizmo atsparumą  bei pagerins savijautą - ne tik pukiai atrodysite, bet taip pat ir jausitės.</p>
+              <p id="third" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 18px"><span class="skin-clr" style="font-size: 16px;">+</span>&nbsp;&nbsp;ValoJūsųkūną</p>
+              <p class="third" style="font-size: 13px;display: none">
+              Natūralūs ingredientai, tarp jų - Senna lapai, padės išvalyti Jūsų organizmą ir sumažinti pilvo išsipūtimą bei pūtimo jaus</p>
+              <p id="four" class="cstm-m-l" style="margin-left: 0px;cursor: pointer; font-size: 18px"><span class="skin-clr" style="font-size: 16px;">+</span>&nbsp;&nbsp;Suteikiadaugiauenergijos</p>
+              <p class="four" style="font-size: 13px;display: none">
+              Matės žolės (isp. Yerbe Mate) lapų bei gudobelės (angl. Hawthorn) uogų mišinys ir kitos gamtos gėrybės.</p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="cstm-sec4">
+      <div class="cstm-sec4-sub2">
+        <div class="col-lg-12 p-0 cstm-center">
+          <div class="col-lg-6 p-0 text-center">
+            <p class="title black-clr">Arbata su misija</p>
+            <hr>
+            <div class="cont">
+              <p class="skin-clr">
+               Leptin siekė atrasti paprastą, natūralų, sveikatai nepavojingą ir veiksmingą būdą išvalyti organizmą be alinančių pastangų. Taip atsirado visiškai natūrali arbata, sukurta po rūpestingų tyrinėjimų, padedanti iš organizmo pašalinti toksinus bei valanti ne tik Jūsų kūną, bet ir mintis. Pagaminta naudojant tik aukščiausios kokybės sudedamąsias dalis, <a href="#" data-toggle="modal" data-target="#myModal1" style="font-size: 14px;"> + Daugiau</a> 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <img src="{{asset('public/front-end-laptin/img/img12.jpg')}}" class="img-responsive">
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
+    font-style: italic;">Arbata su misija</h4>
+      </div>
+      <div class="modal-body" style="color: #d8b763;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;">
+     Leptin siekė atrasti paprastą, natūralų, sveikatai nepavojingą ir veiksmingą būdą išvalyti organizmą be alinančių pastangų. Taip atsirado visiškai natūrali arbata, sukurta po rūpestingų tyrinėjimų, padedanti iš organizmo pašalinti toksinus bei valanti ne tik Jūsų kūną, bet ir mintis. Pagaminta naudojant tik aukščiausios kokybės sudedamąsias dalis,
+
+        Visi žinome, kokia svarbi yra aktyvi gyvensena ir tinkama mityba, bet to ne visada užtenka norint be vargo pasiekti trokštamų rezultatų neprarandant motyvacijos. Ypač, kai įdėtos pastangos neskuba atsispindėti ne tik išvaizdoje, bet ir savijautoje, o juk puikiai jaustis norime jau dabar! Leptin arbata natūraliai palengvins dažnų nusiskundimų simptomus, palengvins organizmo darbą, ir, vartojama kartu laikantis subalansuotos lieknėjimo programos, padės Jums pasiekti pastebimų rezultatų bei pagerinti savijautą.
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class="cstm-sec4">
+      <div class="cstm-sec4-sub3">
+        <div class="col-lg-12 p-0 cstm-center">
+          <div class="col-lg-6 p-0">
+            <img src="{{asset('public/front-end-laptin/img/img13.jpg')}}" class="img-responsive">
+          </div>
+          <div class="col-lg-6 p-0 text-center">
+            <p class="title black-clr">Leptin komanda</p>
+            <hr>
+            <div class="cont">
+              <p class="skin-clr">
+              Visi žinome apie sporto ir tinkamos mitybos svarbą, bet taip pat suprantame, jog to ne visada užtenka norint greičiau ir be vargo pasiekti trokštamų rezultatų. Leptin komanda siekė rasti paprastą, lengvą ir, svarbiausia, veiksmingą būdą išvalyti organizmą be alinančių pastangų; Leptin kūrėjų tikslas yra prisidėti, jog ši patirtis ir puikūs rezultatai būtų prieinami kiekvienam.
+
+             
+              <a href="#" data-toggle="modal" data-target="#myModal" style="font-size: 14px;"> + Daugiau</a> 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+      <!-- modal 1 -->
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
+    font-style: italic;">Leptin komanda</h4>
+      </div>
+      <div class="modal-body" style="color: #d8b763;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;">
+
+       Visi žinome apie sporto ir tinkamos mitybos svarbą, bet taip pat suprantame, jog to ne visada užtenka norint greičiau ir be vargo pasiekti trokštamų rezultatų. Leptin komanda siekė rasti paprastą, lengvą ir, svarbiausia, veiksmingą būdą išvalyti organizmą be alinančių pastangų; Leptin kūrėjų tikslas yra prisidėti, jog ši patirtis ir puikūs rezultatai būtų prieinami kiekvienam.
+       Leptin komanda nenuilstamai ieškojo natūralių gamtos gėrybių ir jų mišinių, kurie turėtų didžiausią teigiamą poveikį Jūsų kūnui. Tad Leptin misija buvo aiški: rasti ingredientus galinčius mums padėti ne tik jaustis, bet ir atrodyti puikiai.  <br>
+        Leptin atsirinko tik pačias geriausias ir aukščiausios kokybės natūralias žaliavas (jų tarpe - laimo bei kiaulpienių lapai, godži uogos bei kitos gamtos gėrybės), kurios buvo pramintos „super ingredientais“. Būtent šių „super ingredientų“ pagrindu ir buvo sukurta Leptin produktų linija, turinti iš esmės pakeisti tai, kaip Jūs atrodote bei jaučiatės.
+        Taip gimė Leptin arbata - visiškai natūrali arbata, sukurta po rūpestingų tyrinėjimų, padedanti atsikratyti toksinų, išvalyti bei išgryninti ne tik Jūsų kūną, bet ir mintis. Pagaminta naudojant tik aukščiausios kokybės sudedamąsias dalis, Leptin  arbata natūraliai palengvins dažnų nusiskundimų simptomus, ir, vartojama kartu laikantis subalansuotos lieknėjimo programos, padės Jums pasiekti pastebimų rezultatų.
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <!-- endmodal1 -->
   
   <!-- COPY SECTION -->
   <div class="m-t-3p">

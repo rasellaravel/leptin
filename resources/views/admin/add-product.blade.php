@@ -8,10 +8,10 @@
 
   <!-- Page content -->
   <div id="content" class="col-md-12">
+    
 
 
-
-
+   
 
 
 
@@ -19,7 +19,7 @@
 
     <!-- page header -->
     <div class="pageheader">
-
+      
 
       <h2><i class="fa fa-thumb-tack" style="line-height: 48px;padding-left: 1px;"></i> Products<span></span></h2>
       
@@ -48,11 +48,11 @@
 
       <!-- row -->
       <div class="row">
-
+        
 
         <!-- col 12 -->
         <div class="col-md-12">
-
+         
           <!-- tile -->
           <section class="tile color transparent-black">
 
@@ -73,39 +73,29 @@
 
             <p class="alert alert-success">{{session('success')}}</p>
             @endif
+            @if ($errors->any())
+            <div class="alert alert-danger">
+              <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+              </ul>
+            </div>
+            @endif
             <form action="{{url('admin/product-store')}}" method="post" enctype= multipart/form-data>	
 
               @csrf
               <div class="tile-body">
-
+               
                 <div class="row">
-
+                  
                   <div class="form-group col-sm-6">
                     <label for="exampleInputEmail">Product Title</label>
                     <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter Product Title" name="title">
-                    <small id="emailHelp" class="form-text text-muted red-color">
-
-                      @if ($errors->has("title"))
-                      {{ $errors->first("title") }}
-                      @else
-                      &nbsp;&nbsp;
-                      @endif
-                    </small>
-
                   </div>
                   <div class="form-group col-sm-6">
                     <label for="exampleInputPassword1">Product Price</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Product Price" name="price">
-
-                    <small id="emailHelp" class="form-text text-muted red-color">
-
-                      @if ($errors->has("price"))
-                      {{ $errors->first("price") }}
-                      @else
-                      &nbsp;
-                      @endif
-                    </small>
-
                   </div>
                   <div class="form-group col-sm-6">
                     <label for="exampleInputPassword2">Discount (%)</label>
@@ -114,29 +104,11 @@
                   <div class="form-group col-sm-6">
                     <label for="exampleInputEmail">Thumbnail Image</label>
                     <input type="file" class="form-control" id="exampleInputEmail" placeholder="link" name="thumb">
-
-                    <small id="emailHelp" class="form-text text-muted red-color">
-
-                      @if ($errors->has("thumb"))
-                      {{ $errors->first("thumb") }}
-                      @else
-                      &nbsp;
-                      @endif
-                    </small>
                   </div>
 
                   <div class="form-group col-sm-6">
                     <label for="exampleInputEmail">Preview Image</label>
                     <input type="file" class="form-control" id="exampleInputEmail" placeholder="link" name="image[]" multiple >
-
-                    <small id="emailHelp" class="form-text text-muted red-color">
-
-                      @if ($errors->has("image.*"))
-                      {{ $errors->first("image.*") }}
-                      @else
-                      &nbsp;
-                      @endif
-                    </small>
                   </div>
                   <div class="col-sm-6">
                     <div class="" style="margin-top: 30px;">
@@ -153,15 +125,6 @@
                   <div class="form-group col-sm-12">
                     <label for="exampleInputPassword2">Description</label>
                     <textarea class="form-control" rows="10" name="description"></textarea>
-
-                    <small id="emailHelp" class="form-text text-muted red-color">
-
-                      @if ($errors->has("description"))
-                      {{ $errors->first("description") }}
-                      @else
-                      &nbsp;
-                      @endif
-                    </small>
                   </div>
                   
 
@@ -172,7 +135,7 @@
 
                 <div class="row">
 
-
+                 
                   <div class="col-sm-offset-4 col-sm-8 text-right">
                     <button type="submit" class="btn btn-greensea">Save</button>
                     <button type="reset" class="btn btn-red">Reset</button>
@@ -193,7 +156,7 @@
           <!-- /tile -->
           <section class="tile transparent">
            <div class="tile-body color transparent-black rounded-corners">
-
+            
             <div class="table-responsive">
               <table  class="table table-datatable table-custom" id="basicDataTable">
                 <thead>

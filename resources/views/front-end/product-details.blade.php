@@ -36,7 +36,7 @@
 					
 				</div>
 				<div class="details col-md-7">
-					<p class="product-title"><i>{{$single_Product->product_title}}</i></p>
+					<p class="product-title" style="line-height: 1"><i>{{$single_Product->product_title}}</i></p>
 					<div class="rating">
 						@if($single_Product->discount)
 						<span class="review-no">{{$single_Product->product_price}} {{__('leptin_lan.EU')}}</span> &nbsp;&nbsp;
@@ -114,40 +114,93 @@
 		<div class="col-md-4">
 			<div class="single-item">
 				<img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-				<p class="mytitle">Aprasymas</p>
+				<p class="mytitle">Veikimas</p>
 				<p class="mydes">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+					Privalumai gali būti:
+					padidėjęs metabolizmas,
+					padidėjusi energija,
+					apetito slopinimas ir sumažėjęs pilvo pūtimas
+					- prašome perskaityti mūsų atsakomybės apribojimą.
+					<br><br>
+					<span style="font-size: 15px;">Ispejimai:</span> 
+
+					Visuomet pasitarkite su savo gydytoju prieš vartodami Leptin Teatox, jei turite sveikatos nusiskundimų ar nustatytų sveikatos sutrikimų. Nors visuose Leptin Teatox produktuose naudojami ingredientai yra 100 proc. natūralūs, turėtumėte įsitikinti, jog nesate alergiškas/-a nei vienai iš arbatos mišinio sudedamųjų dalių.
+					Jaunesniems nei 18 metų asmenims, rekomenduotina Leptin Teatox produktų įsigyti su tėvų sutikimu.
+					<a href="#" data-toggle="modal" data-target="#myModal5" style="font-size: 14px;"> + Daugiau</a> 
+					
+
 				</p>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="single-item">
 				<img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-				<p class="mytitle">Aprasymas</p>
-				<p class="mydes"> -Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+				<p class="mytitle">Vartojimas</p>
+				<p class="mydes"> &quot;LeptinTeatox&quot; 14 dienų nuostabųjį paketą sudaro:
+1 maišelis &quot;Ryto energija&quot; arbata (14 arbatinių pakeliukų) ir
+ 1 maišelis &quot;Organizmo valymas&quot; arbata (7 arbatiniai pakeliai). <br><br>
+Vartojimas:
+1 žingnis: 1 pakelį &quot;Ryto energijos&quot; užpilkyte karštu vandeniu ir palikite 3-5
+minutėms.  Išgerkite 30 min prieš pusryčius. <br><br>
+2 žingsnis: 1 pakelį &quot;Organizmo valymas&quot; užpilkyte karštu vandeniu ir palikite 3-5
+minutėms, priklausomai nuo skonio, galite pridėti cukraus, medaus ar
+citrinos. Gerkite kas antrą naktį.</p>
 					
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="single-item border-none">
 					<img src="{{asset('public/front-end-laptin/img/flower.png')}}">
-					<p class="mytitle">Aprasymas</p>
+					<p class="mytitle">Ingredientai</p>
 					<p class="mydes">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess.
+						Ryto energija: žalioji arbata, matės lapai, laimo lapai,lotoso lapeliai,kiaulpienės lapai, rabarbarų šaknys ir goji uogos.
+						Organizmo valymas  - Gudobelės uogos, lotoso lapeliai, laimo lapeliai, sena lapai, "Psyllium Husk" ir "Poria Cocos" stiebo žievė. <br>
+						 <img src="{{asset('public/front-end-laptin/img/dandelion-300x300.jpg')}}" style="width: 75px; height: 75px;"> 
+						  <img src="{{asset('public/front-end-laptin/img/green-tea-300x300.jpg')}}" style="width: 75px; height: 75px;"> 
+						   <img src="{{asset('public/front-end-laptin/img/hawthorn-berry-300x300.jpg')}}" style="width: 75px; height: 75px;"> 
+						    <img src="{{asset('public/front-end-laptin/img/goji-300x300.jpg')}}" style="width: 73px; height: 73px;"> 
+
+						    
+						     <img src="{{asset('public/front-end-laptin/img/lime-leaf-300x300.jpg')}}" style="width: 75px; height: 75px;"> 
+						  <img src="{{asset('public/front-end-laptin/img/lotus-300x300.jpg')}}" style="width: 75px; height: 75px;"> 
+						   <img src="{{asset('public/front-end-laptin/img/rhubarb-300x300.jpg')}}" style="width: 75px; height: 75px;"> 
+						    <img src="{{asset('public/front-end-laptin/img/senna-leaf-300x300.jpg')}}" style="width: 73px; height: 73px;"> 
+
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+
+
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
+    font-style: italic;">Ispejimai</h4>
+      </div>
+      <div class="modal-body" style="color: #d8b763;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;">
+
+Visuomet pasitarkite su savo gydytoju prieš vartodami Leptin Teatox, jei turite sveikatos nusiskundimų ar nustatytų sveikatos sutrikimų. Nors visuose Leptin Teatox produktuose naudojami ingredientai yra 100 proc. natūralūs, turėtumėte įsitikinti, jog nesate alergiškas/-a nei vienai iš arbatos mišinio sudedamųjų dalių.
+Jaunesniems nei 18 metų asmenims, rekomenduotina Leptin Teatox produktų įsigyti su tėvų sutikimu.
+
+<br><br>
+Leptin produktas galintis sąveikauti su kontraceptiniais preparatais yra Colon Cleanse valomoji arbata. Siekiant išplauti toksinus iš kūno, šis produktas turi lengvą vidurius laisvinantį poveikį, dėl kurio kontraceptinės tabletės gali būti kartu pašalindamas juos iš organizmo. Imantis atsargos priemonių, siūlome kontraceptines tabletes vartoti kelios valandos prieš geriant Colon Cleanse arbatą.
+
+       
+
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
 	<div class="container">
