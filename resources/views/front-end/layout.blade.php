@@ -63,9 +63,8 @@
         <p class="title">Susisiekite</p>
         <hr>
         <p class="text-center">
-          Tel: + <a href="tel: ">370 111 1111</a>/ info@leptin.it <br>
-          UAB Toranas  Arbatos g. 58B, Vilnius, Lietuva <br>
-          I-V 8:00 - 17:00 <br>
+          Tel: + <a href="tel: ">37067456485</a> info@leptin.it <br>
+          MB Dagna <br>
         </p>
         <div class="col-lg-12">
         <form action="{{url('sendMessage')}}" method="post">
@@ -93,19 +92,57 @@
   <div class="footer1">
     <div class="container">
       <div class="col-lg-12">
-        <div class="col-lg-offset-4 col-lg-4 text-center">
-          <a href="#">PRISTATYMAS </a> &nbsp;|
-          <a href="#">DUK </a> &nbsp;|
-          <a href="#">APMOKĖJIMAS </a> &nbsp;
+      <div class="col-lg-3 text-center">
+        @Leptin.it | 2018
+      </div>
+        <div class="col-lg-5 text-center">
+        <a href="#" data-toggle="modal" data-target="#myModal3">PRISTATYMAS </a> &nbsp;|
+          <a href="#" data-toggle="modal" data-target="#myModal3">PRISTATYMAS </a> &nbsp;|
+          <a href="#" data-toggle="modal" data-target="#myModal3">DUK </a> &nbsp;|
+          <a href="#" data-toggle="modal" data-target="#myModal3">APMOKĖJIMAS </a> &nbsp;
         </div>
         <div class="col-lg-4">
-          <p>@Leptin.it | 2018</p>
+           <a href="#" data-toggle="modal" data-target="#myModal3" style="font-size: 14px;"><p>Atsakomybės apribojimas</p></a>
         </div>
+       
+        
       </div>
       <div class="clearfix"></div>
     </div>
   </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color: #d8b763;font-family: 'Raleway', sans-serif;
+    font-style: italic;">Atsakomybės apribojimas</h4>
+      </div>
+      <div class="modal-body" style="color: #d8b763;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;">
+    
+       "Leptin" produkcija nepadaro ir negarantuoja kokio nors konkretaus rezultato ar poveikio naudojant produktus. Kompanijos parduodančios produkcija pareiga yra užtikrinti, kad visi jo gaminiai būtų saugūs ir atitiktų reikalavimus atitinkančias sąlygas iki pristatymo vietos. Nesėkmė su produkto rezultatais nebus pagrindas grąžinti pinigus.
+ 
+"Leptin" produktai nėra maisto pakaitalas. Kad galėtumėte gauti didžiausią naudą sveikatai, jie turėtų būti suvartojami kartu su sveikos subalansuotos mitybos ir tinkamos sporto programos.
+ 
+Mes negarantuojame jokio konkretaus rezultato ar efekto naudojant mūsų produktus. Mes esame atsakingi už tai, kad visi mūsų gaminiai būtų nekenksmingi ir atitiktų reikalavimus iki pristatymo.
+ 
+Kiekvieno asmens rezultatai bus skirtingi. Nors "Leptin" yra skirtas padėti žmonėms, mes nesame atsakingi už rezultatus ir klientų lūkesčius.
+
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <!-- endmodal1 -->
   
   @yield('script')
 

@@ -4840,6 +4840,3 @@ a.submit:hover { text-decoration: none; }
 .mobile-device .navbar-nav.side-nav.collapsed { width: 40px; }
 
 .mobile-device .navbar-nav.side-nav.collapsed.open { width: 100%; }
-.red-color {
-	color: #770707cf;
-}
