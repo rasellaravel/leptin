@@ -13,6 +13,7 @@ use App\Mail\sendMail;
 use App\Paysera\WebToPay;
 use Redirect;
 use Auth;
+use App\billingUpdate;
 
 class PayController extends Controller
 {
@@ -217,7 +218,18 @@ if(!Auth::check()){
     $userId = Auth()->user()->id;
 }
 
-
+$billingUpdate = billingUpdate::where('user_id',Auth()->user()->id)->first();
+        if(!$billingUpdate){
+            $billing_up = new billingUpdate;
+             $billing_up->user_id = Auth()->user()->id;
+             $billing_up->country = $userInfo['country'];
+            $billing_up->district = $userInfo['district'];
+            $billing_up->city = $userInfo['city'];
+            $billing_up->s_address1 = $userInfo['s_address1'];
+            $billing_up->s_address2 = $userInfo['s_address2'];
+            $billing_up->zip = $userInfo['zip'];;
+            $billing_up->save();
+        }
 
 
 $billing = new Billing;

@@ -12,6 +12,7 @@
 				    <h3 class="panel-title">{{__('leptin_lan.billing_details')}}</h3>
 				  </div>
 				  <form action="{{url('billing-update')}}" method="post">
+				  @csrf
 				  <div class="panel-body">
 					<input type="hidden" name="total_amount" value="{{Cart::total()}}">
 					<div class="col-md-6">
@@ -20,7 +21,14 @@
 					    <select class="form-control" name="country" required>
 
 					    @foreach($country as $country)
-						  <option value="{{$country->name}}">{{$country->name}}</option>
+						  <option value="{{$country->name}}"
+
+						  <?php 
+						  	if($country->name == $billing->country){
+						  		echo 'selected';
+						  	}
+						  ?>
+						  >{{$country->name}}</option>
 						 @endforeach
 						</select>
 					  </div>
@@ -28,25 +36,25 @@
 					<div class="col-md-6">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.District')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.District')}}" name="district" required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.District')}}" name="district" value="{{$billing->district}}" required>
 					  </div>
 					</div>
 					<div class="col-md-6">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.town')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.town')}}" name="city" required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.town')}}" name="city" value="{{$billing->city}}" required>
 					  </div>
 					</div>
 					<div class="col-md-6">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.Street_address')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Street_address')}}" name="s_address1" required>
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.Street_address')}}" name="s_address1" value="{{$billing->s_address1}}" required>
 					  </div>
 					</div>
 					<div class="col-md-6">
 					  <div class="form-group">
 					  <label for="exampleInputEmail1">{{__('leptin_lan.Appartment')}}<spam style="color: red;padding:3px;">*</span></label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.appartment')}}" name="s_address2">
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.appartment')}}" value="{{$billing->s_address2}}" name="s_address2">
 					  </div>
 					</div>
 					
@@ -54,7 +62,7 @@
 					<div class="col-md-6">
 					  <div class="form-group">
 					    <label for="exampleInputEmail1">{{__('leptin_lan.postcode')}}</label>
-					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.postcode')}}" name="zip">
+					    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="{{__('leptin_lan.postcode')}}" value="{{$billing->zip}}" name="zip">
 					  </div>
 					</div>
 					<!-- <div class="col-md-12">
