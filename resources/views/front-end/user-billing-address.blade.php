@@ -11,6 +11,7 @@
 				  <div class="panel-heading">
 				    <h3 class="panel-title">{{__('leptin_lan.billing_details')}}</h3>
 				  </div>
+				  <form action="{{url('billing-update')}}" method="post">
 				  <div class="panel-body">
 					<input type="hidden" name="total_amount" value="{{Cart::total()}}">
 					<div class="col-md-6">
@@ -67,6 +68,7 @@
 					    <button type="submit" class="btn btn-success">{{__('leptin_lan.update')}}</button> 
 					  </div>
 					</div>
+					</form>
 					
 					
 

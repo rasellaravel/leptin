@@ -97,6 +97,10 @@ class HomeController extends Controller
     {
         return view('front-end.payment-histry');
     }
+    public function BillingUpdate(Request $request)
+    {
+        return 'rase';
+    }
     
  
 
