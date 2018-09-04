@@ -154,7 +154,7 @@ public function PackageProductStore(Request $request)
     $PackageProduct->img = $imageName;
     $PackageProduct->link = $request->link;
     $PackageProduct->save();
-    $request -> session() -> flash("success", "true");
+    $request -> session() -> flash("success", "Packege Product Successfully Inserted!!");
     return back();
 
 
